@@ -20,7 +20,7 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api.prelive.ionos.space
-          project-id: af7eb46f-ce5f-43bf-9085-3df349214e1e
+          project-id: 7d566a39-d590-4ab9-8cf8-a3a549352c62
           action: retrieve-info
 
 
@@ -44,6 +44,6 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api.prelive.ionos.space
-          project-id: af7eb46f-ce5f-43bf-9085-3df349214e1e
+          project-id: 7d566a39-d590-4ab9-8cf8-a3a549352c62
           branch-id: ${{ needs.retrieve-project.outputs.branch-id }}
           action: dispatch-deployments
