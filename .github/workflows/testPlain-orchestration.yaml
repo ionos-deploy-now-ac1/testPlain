@@ -27,7 +27,7 @@ jobs:
   build:
     needs: retrieve-project
     if: ${{ needs.retrieve-project.outputs.deployment-enabled == 'true' }}
-    uses: ./.github/workflows/test-plain-build.yaml
+    uses: ./.github/workflows/testPlain-build.yaml
     with:
       site-url: https://IONOS_DEPLOY_NOW_SITE_URL
       branch-id: ${{ needs.retrieve-project.outputs.branch-id }}
