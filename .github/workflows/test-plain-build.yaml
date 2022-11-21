@@ -28,7 +28,7 @@ jobs:
 
 # Do not touch the following action
       - name: Store deployment content
-        uses: ionos-deploy-now/artifact-acv11
+        uses: ionos-deploy-now/artifact-action@v1
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api.prelive.ionos.space
